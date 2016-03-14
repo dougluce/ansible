@@ -98,6 +98,9 @@ And here's an example showing some specific version downloads from multiple sour
     - src: https://some.webserver.example.com/files/master.tar.gz
       name: http-role
 
+    # from a tar.gz packaged file via S3 (requires boto3)
+    - src: s3://my_bucket/ansible_roles/rolename.tar.gz
+
     # from Bitbucket
     - src: git+http://bitbucket.org/willthames/git-ansible-galaxy
       version: v1.4
